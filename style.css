@@ -1,0 +1,59 @@
+/* Styling the body */
+body {
+    display: flex; /* Center the calculator horizontally */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* The viewport will be at least the height of the browser window */
+    background-color: #242424; /* Dark background */
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  /* Styling the table */
+  table {
+    border-collapse: collapse; /* Remove borders between buttons */
+    background-color: #424242; /* Calculator body color */
+    border-radius: 5px; /* Rounded corners for the calculator */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
+  }
+  
+  /* Styling the table cells */
+  td {
+    padding: 15px; /* Spacing between buttons */
+    text-align: center; /* Center the button text */
+  }
+  
+  /* Styling the buttons */
+  button  {
+    cursor: pointer; /* User sees it's a button on hover */
+    background-color: transparent; /* Transparent background for buttons */
+    border: none; /* Remove borders */
+    color: #fff; /* White text color */
+    font-size: 16px; /* Text size for buttons */
+    font-weight: bold; /* Bold text */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  /* Styling the buttons on hover */
+  button:hover {
+    background-color: #616161; /* Light grey background on hover */
+  }
+  
+  /* Styling the result display */
+  #result {
+    background-color: #333; /* Darker background for the result display */
+    color: #fff; /* White text color for the result display */
+    font-size: 20px; /* Text size for the result display */
+    padding: 10px;
+  }
+  
+  /* Styling the red button (equals button) */
+  button[onclick="calculate()"] {
+    background-color: #F44336; /* Red color for the equals button */
+  }
+  
+  /* Styling the red button on hover */
+  button[onclick="calculate()"]:hover {
+    background-color: #D32F2F; /* Darker red color for the equals button on hover */
+  }
+  
